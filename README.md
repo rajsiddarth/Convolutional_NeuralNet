@@ -13,8 +13,6 @@ The dataset is credited to AT&T Laboratories Cambridge.
 
 Every MNIST data point has two parts: an image of a handwritten digit and a corresponding label.
 
-We'll call the images "x" and the labels "y". 
-
 Both the training set and test set contain images and their corresponding labels; for example the training images are mnist.train.images and the training labels are mnist.train.labels.
 
 Each image is 28 pixels by 28 pixels. We can interpret this as a big array of numbers:
