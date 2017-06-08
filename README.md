@@ -1,5 +1,5 @@
 # Convolutional_NeuralNet
-Implementation of Convolutional Neural Networks in R & Python
+Implementation of Convolutional Neural Networks in R using "mxnet "& Python
 
 *Data set Description:*
 
