@@ -4,9 +4,9 @@ rm(list=ls(all=T))
 #Getting Oivetti Faces data set
 library(RCurl)
 
-x=read.csv("https://raw.githubusercontent.com/rajsiddarth119/
+x=read.csv("https://raw.githubusercontent.com/rajsiddarth/
            Convolutional_NeuralNet/master/olivetti_X.csv",header=F)
-y=read.csv("https://raw.githubusercontent.com/rajsiddarth119/
+y=read.csv("https://raw.githubusercontent.com/rajsiddarth/
                     Convolutional_NeuralNet/master/olivetti_y.csv",header=F)
 
 library(EBImage)
