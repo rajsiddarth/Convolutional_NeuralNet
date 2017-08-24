@@ -17,5 +17,5 @@ Both the training set and test set contain images and their corresponding labels
 
 Each image is 28 pixels by 28 pixels. We can interpret this as a big array of numbers:
 
-
-
+References: 
+Reference: https://elitedatascience.com/keras-tutorial-deep-learning-in-python
