@@ -26,22 +26,22 @@ The dataset is credited to AT&T Laboratories Cambridge.
 
 We build layes of our cnn network as following using "mxnet" library.
 
-### 1st convolutional layer
+- 1st convolutional layer
 conv_1 = mx.symbol.Convolution(data = data, kernel = c(5, 5), num_filter = 20)
 tanh_1 =mx.symbol.Activation(data = conv_1, act_type = "tanh")
 pool_1 = mx.symbol.Pooling(data = tanh_1, pool_type = "max", kernel = c(2, 2), stride = c(2, 2))
 
-### 2nd convolutional layer
+- 2nd convolutional layer
 conv_2 = mx.symbol.Convolution(data = pool_1, kernel = c(5, 5), num_filter = 50)
 tanh_2 = mx.symbol.Activation(data = conv_2, act_type = "tanh")
 pool_2 = mx.symbol.Pooling(data=tanh_2, pool_type = "max", kernel = c(2, 2), stride = c(2, 2))
 
-### 1st fully connected layer
+- 1st fully connected layer
 
 flatten = mx.symbol.Flatten(data = pool_2)
 fc_1=mx.symbol.FullyConnected(data = flatten, num_hidden = 500)
 tanh_3= mx.symbol.Activation(data = fc_1, act_type = "tanh")
 
-### 2nd fully connected layer
+- 2nd fully connected layer
 fc_2=mx.symbol.FullyConnected(data = tanh_3, num_hidden = 40)
 
